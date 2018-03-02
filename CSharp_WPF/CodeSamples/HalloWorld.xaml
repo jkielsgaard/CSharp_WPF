@@ -1,0 +1,22 @@
+﻿<Window x:Class="CSharp_WPF.CodeSamples.HalloWorld"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharp_WPF.CodeSamples"
+        mc:Ignorable="d"
+        Title="HalloWorld" Height="150" Width="300">
+    <Grid Background="Blue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Button Name="btn_Hallo" Content="Hallo" FontSize="24" Grid.Column="1" Grid.Row="1" Click="btn_Hallo_Click"/>
+    </Grid>
+</Window>
